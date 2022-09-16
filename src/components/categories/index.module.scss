@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+
+.categories {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.categories_title {
+    @extend %heading;
+    text-align: center;
+    margin-bottom: 63px;
+    span {
+        @extend %spanSection;
+        margin-bottom: 40px;
+    }
+    h2 {
+        @include fontsize(40px, 50px);
+        sup {
+            @extend %PlayfairDisplay;
+        }
+    }
+}
+.categories_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+.categories_link {
+    width: 240px;
+    height: 240px;
+    border-radius: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.categories_content {
+    display: flex;
+    justify-content: space-between;
+}
+.content_item {
+    max-width: 500px;
+    h3 {
+        @extend %heading;
+        @include fontsize(29px, 36px);
+        margin-bottom: 26px;
+    }
+    p {
+        @extend %paragraph;
+    }
+}

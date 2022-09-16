@@ -1,0 +1,47 @@
+@import "../../variables.scss";
+
+.container {
+    // @extend %borderT;
+    position: relative;
+    z-index: 1;
+    .image {
+        width: 371px;
+        height: 494px;
+        margin-bottom: 5px;
+    }
+    .content {
+        padding: 15px 0;
+        border-bottom: 1px solid #dbdbdb;
+        .title {
+            font-family: "Libre Franklin";
+            font-style: normal;
+            font-weight: 400;
+            @include fontsize(16px, 26px);
+            color: #6c6c6c;
+        }
+        .price {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            @include fontsize(14px, 24px);
+            color: #000000;
+        }
+    }
+    &:hover {
+        .image {
+            overflow: hidden;
+            img {
+                width: 120%;
+                object-position: -2rem -2rem;
+            }
+        }
+        .title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .price {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+}

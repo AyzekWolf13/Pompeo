@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.onlineStore {
+    // @extend %borderT;
+    padding: 120px 0;
+}
+.container {
+    padding: 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 60px;
+    span {
+        @extend %spanSection;
+    }
+    h2 {
+        @extend %heading;
+        @include fontsize(40px, 50px);
+    }
+}
+.carts {
+    margin-bottom: 40px;
+    padding: 0 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: 1fr;
+    position: relative;
+}
+.button {
+    @extend %button;
+}

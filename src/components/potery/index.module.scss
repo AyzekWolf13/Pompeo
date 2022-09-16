@@ -1,0 +1,35 @@
+@import "../../_variables.scss";
+
+.potery {
+    // @extend %borderT;
+    background-image: url(../../assets/image/fon/IMAGE_.png);
+    background-size: cover;
+    padding: 120px 0;
+}
+.container {
+    span {
+        @extend %spanSection;
+        display: block;
+        text-align: left;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+    h2 {
+        @extend %heading;
+        @include fontsize(36px, 46px);
+        margin-bottom: 13px;
+    }
+    p {
+        @extend %paragraph;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 50px;
+        a {
+            font-weight: 400;
+            color: #ac1313;
+        }
+    }
+}
+.button {
+    @extend %button;
+}

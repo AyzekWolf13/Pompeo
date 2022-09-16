@@ -1,0 +1,37 @@
+.header {
+    background-color: #fff;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+.logo {
+    width: 109px;
+    height: 40px;
+}
+.menu {
+    ul {
+        display: flex;
+        align-items: center;
+        li + li {
+            margin-left: 20px;
+        }
+        li {
+            text-align: center;
+            a {
+                padding: 5px;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 22px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #6c6c6c;
+                animation: sway 5s infinite alternate ease-in-out;
+            }
+        }
+    }
+}

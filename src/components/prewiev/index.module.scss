@@ -1,0 +1,39 @@
+@import "../../_variables.scss";
+
+.previev {
+    background-image: url(../../assets/image/fon/image.png);
+    height: 708px;
+    padding-top: 94px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    padding: 33px 0 22px;
+}
+.previev__content {
+    margin-right: -111px;
+    padding-right: 64px;
+    span {
+        @extend %spanSection;
+    }
+    h1 {
+        @extend %heading;
+        @include fontsize(48px, 58px);
+        text-align: left;
+        padding-bottom: 14px;
+        sup {
+            @extend %PlayfairDisplay;
+        }
+    }
+    p {
+        @extend %paragraph;
+        margin-bottom: 70px;
+    }
+    a.button {
+        @extend %button;
+    }
+}
+.previev__image {
+    margin-right: -111px;
+    padding-left: 29px;
+}

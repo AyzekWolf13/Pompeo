@@ -1,0 +1,47 @@
+@import "../../variables.scss";
+
+.products {
+    // @extend %borderT;
+    padding: 221px 0 120px;
+}
+.container {
+    padding: 0 14px;
+}
+.product {
+    display: flex;
+    align-items: center;
+}
+.product + .product {
+    margin-top: 220px;
+}
+.image {
+    width: 500px;
+    height: 220px;
+    margin: 0 76px 28px 10px;
+    background-color: #f5f5f5;
+    position: relative;
+    img {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -50%;
+    }
+}
+.content {
+    width: 396px;
+    margin: 20px 170px 0 10px;
+    padding-right: 10px;
+    h3 {
+        @extend %heading;
+        @include fontsize(24px, 34px);
+        margin-bottom: 23px;
+    }
+    p {
+        @extend %paragraph;
+        margin-bottom: 27px;
+    }
+    a {
+        @extend %heading;
+        @include fontsize(14px, 24px);
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../variables.scss";
+
+footer {
+    // @extend %borderT;
+    background: rgba(219, 219, 219, 0.1);
+}
+.content {
+    padding: 120px 0 80px;
+    .container {
+        .prewiev {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+            img {
+                margin-bottom: 30px;
+            }
+            p {
+                @extend %paragraph;
+                text-align: center;
+            }
+        }
+        .list {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: 10px;
+                }
+                h4 {
+                    @extend %heading;
+                    @include fontsize(13px, 23px);
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+                p {
+                    @extend %paragraph;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: rgba(219, 219, 219, 0.3);
+    padding: 30px 0;
+    text-align: center;
+    p {
+        @extend %paragraph;
+        span{
+            color: #000;
+        }
+    }
+}

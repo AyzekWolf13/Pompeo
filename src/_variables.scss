@@ -1,0 +1,60 @@
+// $black: #232323;
+// $background: #ffdf8c;
+// $gray-line: #f6f6f6;
+// $orange: #fe5f1e;
+
+// $container-width: 90%;
+
+// $duration: 0.15s;
+@mixin fontsize($fz, $lh) {
+    font-size: $fz;
+    line-height: $lh;
+}
+%heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    // text-align: center;
+    color: #000000;
+}
+%PlayfairDisplay {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    text-align: center;
+    color: #ac1313;
+}
+%paragraph {
+    font-family: "Libre Franklin";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6c6c6c;
+}
+%borderT {
+    border: solid 2px #000000;
+}
+%spanSection {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #d77474;
+}
+%button {
+    @extend %heading;
+    @include fontsize(12px, 22px);
+    // display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 35px;
+    background: #ac1313;
+}
